@@ -8,7 +8,8 @@ def prodotto_scalare(v1: list, v2: list) -> float:
 
 def rango_matrice(m: list) -> int:
     """Sub-task 2: Calcola il rango di una matrice."""
-    pass
+    matrice = np.array(m)
+    return int(np.linalg.matrix_rank(matrice))
 
 def risolvi_sistema_lineare(A: list, b: list) -> np.ndarray:
     """Sub-task 3: Risolvere un Sistema Lineare."""
